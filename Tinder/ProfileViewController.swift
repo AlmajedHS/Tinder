@@ -10,9 +10,12 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    
+    @IBOutlet weak var cardImage: UIImageView!
+    var imageSeg: UIImage?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        cardImage.image = imageSeg
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +24,12 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func didTapDon(_ sender: UITapGestureRecognizer) {
+        print("??")
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
     /*
     // MARK: - Navigation
 
